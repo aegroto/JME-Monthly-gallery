@@ -12,7 +12,7 @@
 
 .text {
     display:inline;
-    text-shadow:.1px .1px 8px @text-shadow;
+    text-shadow:.1px .1px 8px @text-border;
     font-size: @text-font-size;
     margin-top:@text-font-size-paddig;
     font-family:'Passion One';
@@ -21,31 +21,29 @@
 
 
 
-#post .container {
-    border:none;
+.content_container {
     text-align: center;  
     display:inline-block;
-    padding:1%;
-    margin:1%;
     margin-top:3%;
+    padding:1%;
+    //margin:2.5%;
     //margin-left:2.5%;
     //margin-right:2.5%;
     //border:.1px solid @container-border-color; 
     -webkit-box-shadow: 0px 0px 7px 1px @container-shadow;
     -moz-box-shadow: 0px 0px 7px 1px @container-shadow;
     box-shadow: 0px 0px 7px 1px @container-shadow;
-    min-height:0px;
     width:45%;
     height:85%;
 }
 
-#post .container:last-child{
+.content_container.right{
     margin-right:1.75%;
     //margin-left:0%;
     float:right;
 }
 
-#post .container:first-child{
+.content_container.left{
     //margin-right:0%;
     margin-left:1.75%;
     float:left;
